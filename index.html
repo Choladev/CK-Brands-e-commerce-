@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CK Brands - Premium Mobile Phones & Accessories</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/ck-logo.png" alt="CK Brands" width="125"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#featured">Products</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#testimonials">About</a></li>
+                        <li><a href="#footer">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-icons">
+                    <a href="#" id="search-btn"><i class="fas fa-search"></i></a>
+                    <a href="#" id="cart-btn"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
+                    <a href="#" id="user-btn"><i class="fas fa-user"></i></a>
+                    <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+                </div>
+                
+                <!-- Search Box -->
+                <div class="search-box">
+                    <input type="text" placeholder="Search products...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Premium Mobile Phones & Accessories</h1>
+                <p>Discover the latest smartphones and high-quality accessories at unbeatable prices.</p>
+                <a href="#featured" class="btn">Shop Now</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero-phone.png" alt="Latest Smartphone">
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured" id="featured">
+        <div class="small-container">
+            <h2 class="title">Featured Products</h2>
+            <div class="row">
+                <div class="col-4">
+                    <img src="images/product-1.jpg" alt="iPhone 15 Pro">
+                    <h4>iPhone 15 Pro</h4>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>$999.00</p>
+                    <button class="add-to-cart" data-id="1" data-name="iPhone 15 Pro" data-price="999" data-image="images/product-1.jpg">Add to Cart</button>
+                </div>
+                <div class="col-4">
+                    <img src="images/product-2.jpg" alt="Samsung Galaxy S23 Ultra">
+                    <h4>Samsung Galaxy S23 Ultra</h4>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p>$1,199.00</p>
+                    <button class="add-to-cart" data-id="2" data-name="Samsung Galaxy S23 Ultra" data-price="1199" data-image="images/product-2.jpg">Add to Cart</button>
+                </div>
+                <div class="col-4">
+                    <img src="images/product-3.jpg" alt="Google Pixel 7 Pro">
+                    <h4>Google Pixel 7 Pro</h4>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>$899.00</p>
+                    <button class="add-to-cart" data-id="3" data-name="Google Pixel 7 Pro" data-price="899" data-image="images/product-3.jpg">Add to Cart</button>
+                </div>
+                <div class="col-4">
+                    <img src="images/product-4.jpg" alt="OnePlus 11 5G">
+                    <h4>OnePlus 11 5G</h4>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>$699.00</p>
+                    <button class="add-to-cart" data-id="4" data-name="OnePlus 11 5G" data-price="699" data-image="images/product-4.jpg">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offer Banner -->
+    <section class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/exclusive.png" class="offer-img" alt="Special Offer">
+                </div>
+                <div class="col-2">
+                    <p>Exclusively Available on CK Brands</p>
+                    <h2>AirPods Max</h2>
+                    <small>Experience ultra-low distortion across the audible range. The Apple-designed dynamic driver produces 
+                        incredible detail and fidelity for pure, accurate sound.</small>
+                    <a href="#" class="btn" data-id="5" data-name="AirPods Max" data-price="549" data-image="images/exclusive.png">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories" id="categories">
+        <div class="small-container">
+            <h2 class="title">Shop by Category</h2>
+            <div class="row">
+                <div class="col-3">
+                    <img src="images/category-1.jpg" alt="Smartphones">
+                    <div class="category-content">
+                        <h3>Smartphones</h3>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <img src="images/category-2.jpg" alt="Accessories">
+                    <div class="category-content">
+                        <h3>Accessories</h3>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <img src="images/category-3.jpg" alt="Wearables">
+                    <div class="category-content">
+                        <h3>Wearables</h3>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Products -->
+    <section class="latest">
+        <div class="small-container">
+            <h2 class="title">Latest Products</h2>
+            <div class="row">
+                <div class="col-4">
+                    <img src="images/product-5.jpg" alt="Sony WH-1000XM5">
+                    <h4>Sony WH-1000XM5</h4>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>$399.00</p>
+                    <button class="add-to-cart" data-id="6" data-name="Sony WH-1000XM5" data-price="399" data-image="images/product-5.jpg">Add to Cart</button>
+                </div>
+                <div class="col-4">
+                    <img src="images/product-6.jpg" alt="Apple Watch Series 8">
+                    <h4>Apple Watch Series 8</h4>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>$429.00</p>
+                    <button class="add-to-cart" data-id="7" data-name="Apple Watch Series 8" data-price="429" data-image="images/product-6.jpg">Add to Cart</button>
+                </div>
+                <div class="col-4">
+                    <img src="images/product-7.jpg" alt="Samsung Galaxy Buds2 Pro">
+                    <h4>Samsung Galaxy Buds2 Pro</h4>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p>$229.00</p>
+                    <button class="add-to-cart" data-id="8" data-name="Samsung Galaxy Buds2 Pro" data-price="229" data-image="images/product-7.jpg">Add to Cart</button>
+                </div>
+                <div class="col-4">
+                    <img src="images/product-8.jpg" alt="Anker PowerCore 20K">
+                    <h4>Anker PowerCore 20K</h4>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>$49.99</p>
+                    <button class="add-to-cart" data-id="9" data-name="Anker PowerCore 20K" data-price="49.99" data-image="images/product-8.jpg">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="small-container">
+            <h2 class="title">What Our Customers Say</h2>
+            <div class="row">
+                <div class="col-3">
+                    <div class="testimonial-card">
+                        <i class="fas fa-quote-left"></i>
+                        <p>I've been buying from CK Brands for years. Their products are always genuine and their customer service is outstanding.</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <img src="images/user-1.jpg" alt="Sarah J.">
+                        <h3>Sarah J.</h3>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="testimonial-card">
+                        <i class="fas fa-quote-left"></i>
+                        <p>Fast delivery and excellent packaging. My new phone arrived in perfect condition. Will definitely shop here again!</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <img src="images/user-2.jpg" alt="Michael T.">
+                        <h3>Michael T.</h3>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="testimonial-card">
+                        <i class="fas fa-quote-left"></i>
+                        <p>Best prices I've found online for genuine products. Their warranty service is also very reliable.</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <img src="images/user-3.jpg" alt="Emma K.">
+                        <h3>Emma K.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands -->
+    <section class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <img src="images/brand-1.png" alt="Apple">
+                </div>
+                <div class="col-5">
+                    <img src="images/brand-2.png" alt="Samsung">
+                </div>
+                <div class="col-5">
+                    <img src="images/brand-3.png" alt="Google">
+                </div>
+                <div class="col-5">
+                    <img src="images/brand-4.png" alt="OnePlus">
+                </div>
+                <div class="col-5">
+                    <img src="images/brand-5.png" alt="Sony">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h3>Subscribe to Our Newsletter</h3>
+                <p>Get updates on special offers and new products</p>
+                <form>
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <img src="images/ck-logo-white.png" alt="CK Brands">
+                    <p>Your trusted source for premium mobile phones and accessories since 2010.</p>
+                </div>
+                <div class="footer-col-2">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#featured">Products</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#testimonials">About Us</a></li>
+                        <li><a href="#footer">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Warranty</a></li>
+                        <li><a href="#">Track Order</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Tech Street, Silicon Valley, CA</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@ckbrands.com</li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright &copy; 2023 - CK Brands. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-cart">&times;</button>
+        </div>
+        <div class="cart-items">
+            <!-- Cart items will be added here dynamically -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <h4>Total: <span>$0.00</span></h4>
+            </div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+    <div class="cart-overlay"></div>
+
+    <!-- User Login Modal -->
+    <div class="login-modal">
+        <div class="login-content">
+            <span class="close-login">&times;</span>
+            <h3>Login to Your Account</h3>
+            <form>
+                <div class="form-group">
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="btn">Login</button>
+            </form>
+            <p>Don't have an account? <a href="#" class="register-link">Register here</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+  </html>
